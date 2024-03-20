@@ -21,6 +21,8 @@ export class LoginService {
   private userID = new BehaviorSubject<any>(null);
   private profile = new BehaviorSubject<any>(null);
   private policies = new BehaviorSubject<any>(null);
+  private newHireUser = new BehaviorSubject<any>(null);
+  private userEmail = new BehaviorSubject<any>(null);
   user$ = this.user.asObservable();
   userToken$ = this.userToken.asObservable();
   userBearer$ = this.userBearer.asObservable();
@@ -28,7 +30,12 @@ export class LoginService {
   userID$ = this.userID.asObservable();
   profile$ = this.profile.asObservable();
   policies$ = this.policies.asObservable();
- 
+  newHireUser$ = this.newHireUser.asObservable();
+  userEmail$ = this.userEmail.asObservable();
+
+/*
+Set Observable Data
+*/
   setUser(data:string){
     this.user.next(data);
   }
@@ -50,8 +57,15 @@ export class LoginService {
   setPolicies(data:any){
     this.policies.next(data)
   }
+  setNewHireUser(data:any){
+    this.newHireUser.next(data)
+  }
+  setUserEmails(data:any){
+    this.userEmail.next(data)
+  }
   
   //Update User / Profile Information
+  //TODO: Emit and Listen may not be needed remove these functions if not needed
   emit(eventName:string, payload: any){
     this.subject.next({eventName,payload});
   }
@@ -66,7 +80,6 @@ export class LoginService {
   }
 
   constructor(private http: HttpClient){}
-
 
 // Function to return Readonly Access iCare API
   getStaffToken():Observable<any>{
@@ -203,5 +216,95 @@ export class LoginService {
     const options = { headers };
     return this.http.post<any>(`${api}layouts/initialPolicySignatureStaffPortal/_find`,dataQuery, options);
   }
+
+  /*
+  Submitting information for updates / new entries
+  Verifying submittals of information processed properly
+  */
+  dataQueueStaffPortal():Observable<any>{
+    let bToken:any = this.userBearer$;
+    let token = bToken.source._value;
+    let campusAPI:any = this.campusAPI$;
+    let api = campusAPI.source._value;
+    let userAccountID:any = this.userID$;
+    let userID = userAccountID.source._value;
+    const headers = new HttpHeaders({
+      Authorization:`Bearer ${token}`
+    },);
+    const dataQuery = {
+      query:[
+        {staffID:`=${userID}`},
+      ]
+    };
+    headers.set('Content-Type','application/json');
+    const options = { headers };
+    return this.http.post<any>(`${api}layouts/dataQueueStaffPortal/_find`,dataQuery, options);
+
+  }
+
+  /*
+  Fetching basic data about a staff member in “new hire” status (i.e., before staff member has become an active employee)
+  */
+  newHireBasicStaffPortal():Observable<any>{
+    let bToken:any = this.userBearer$;
+    let token = bToken.source._value;
+    let campusAPI:any = this.campusAPI$;
+    let api = campusAPI.source._value;
+    let userAccountID:any = this.userID$;
+    let userID = userAccountID.source._value;
+    const headers = new HttpHeaders({
+      Authorization:`Bearer ${token}`
+    },);
+    const dataQuery = {
+      query:[
+        {newHireID:`=${userID}`}, // TODO: Update userID for newHireID
+      ]
+    };
+    headers.set('Content-Type','application/json');
+    const options = { headers };
+    return this.http.post<any>(`${api}layouts/newHireBasicStaffPortal/_find`,dataQuery, options);
+  }
+
+  newHireExtendedStaffPortal():Observable<any>{
+    let bToken:any = this.userBearer$;
+    let token = bToken.source._value;
+    let campusAPI:any = this.campusAPI$;
+    let api = campusAPI.source._value;
+    let userAccountID:any = this.userID$;
+    let userID = userAccountID.source._value;
+    const headers = new HttpHeaders({
+      Authorization:`Bearer ${token}`
+    },);
+    const dataQuery = {
+      query:[
+        {email:`=${userID}`}, // TODO: Update userID for newHire Email
+      ]
+    };
+    headers.set('Content-Type','application/json');
+    const options = { headers };
+    return this.http.post<any>(`${api}layouts/newHireExtendedStaffPortal/_find`,dataQuery, options);
+  }
+
+  newHireInitialPolicySignatureStaffPortal():Observable<any>{
+    let bToken:any = this.userBearer$;
+    let token = bToken.source._value;
+    let campusAPI:any = this.campusAPI$;
+    let api = campusAPI.source._value;
+    let userAccountID:any = this.userID$;
+    let userID = userAccountID.source._value;
+    const headers = new HttpHeaders({
+      Authorization:`Bearer ${token}`
+    },);
+    const dataQuery = {
+      query:[
+        {newHireID:`=${userID}`}, // TODO: Update userID for newHireID
+      ]
+    };
+    headers.set('Content-Type','application/json');
+    const options = { headers };
+    return this.http.post<any>(`${api}layouts/newHireInitialPolicySignatureStaffPortal/_find`,dataQuery, options);
+  }
+
+  pendingStaffPortalUpdateStaffPortal(){}
 
 }

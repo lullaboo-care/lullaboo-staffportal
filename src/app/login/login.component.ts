@@ -10,6 +10,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { Router } from '@angular/router';
 import { LoginService } from '../i-care-service.service';
 
+//Nice to Have Feature
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -32,17 +35,17 @@ export class LoginComponent implements OnInit {
   testJSON: string = '';
   sessiionEnded: string = '';
   campuses :any =[];
-  //data$: Observable<any>;
   selectedCampus = '';
   selectedAPIURL:any;
   campusURL = '';
   showPassword: boolean = false;
 
-  constructor(private loginService: LoginService, private router :Router) { 
+  constructor(private loginService: LoginService, private router :Router, private snackBar: MatSnackBar) { 
   }
 
   ngOnInit(){
 
+    // Set Campus List on load
     let tokenz = ''
     this.loginService.getStaffToken().subscribe(data=>{
       tokenz = data.response.token;

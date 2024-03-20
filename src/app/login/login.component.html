@@ -1,0 +1,44 @@
+<mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="login-form">
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput [(ngModel)]="username" name="username" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="password" [(ngModel)]="password" name="password" required>
+          <mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+            <mat-icon *ngIf="!showPassword" fontIcon="visibilityIcon"></mat-icon>
+            <mat-icon *ngIf="showPassword" fontIcon="visibilityIconOff"></mat-icon>
+          </mat-icon-button>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Select Campus</mat-label>
+          <mat-select (selectionChange)="onSelectionChange($event)">
+            @for (campus of campuses; track campus) {
+              @if (campus.fieldData.staffPortalAPIURL){
+              <mat-option [value]="campus.fieldData.campusID">{{campus.fieldData.name}}</mat-option>
+              }
+            }
+          </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="submitLogin()">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+<!--
+  <p>Selected Campus: {{selectedCampus}}</p>
+  <p>API Selected: {{campusURL}}</p>
+-->
+
+<!--
+  <p>API Selected: {{selectedAPIURL.fieldData.staffPortalAPIURL}}</p>
+  <p>Token: {{ token | json}}</p>
+  <p>Query JSON: {{ testJSON | json }}</p>
+  <p>Session Ended: {{sessiionEnded | json}}</p>
+  <p>Error: {{ error | json }}</p>
+  -->

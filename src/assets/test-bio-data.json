@@ -1,0 +1,471 @@
+{
+    "response": {
+        "dataInfo": {
+            "database": "iCareStaffPortalAccess",
+            "layout": "staffBioMobile",
+            "table": "staffBio",
+            "totalRecordCount": 8,
+            "foundCount": 2,
+            "returnedCount": 2
+        },
+        "data": [
+            {
+                "fieldData": {
+                    "bioText": "",
+                    "indicator": "",
+                    "staffID": 803,
+                    "staff::staffNameFirstMiddleLast": "SaraCostin",
+                    "staffNameFirstMiddleLast": "",
+                    "staffBioContainer: :photoBase64": "",
+                    "staffContainer: :photoBase64": "",
+                    "jobTitle: :jobTitle": "Program Coordinator - Band 5"
+                },
+                "portalData": {
+                    "staffShiftAssignment": [
+                        {
+                            "recordId": "4589",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/16/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4590",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/17/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4591",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/18/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4592",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/19/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4593",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/20/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4594",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/02/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4595",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/03/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4596",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/04/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4597",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/05/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4598",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/06/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4599",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "12/30/2019",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4600",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/02/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4601",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/03/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4602",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/13/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4603",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/14/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4604",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/15/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4605",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/16/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4606",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/17/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4607",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/20/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4608",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/27/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4609",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/28/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4610",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/29/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4611",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/30/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4612",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "01/31/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4613",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "02/18/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4614",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "02/19/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4615",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "02/20/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4616",
+                            "staffShiftAssignment::roomID": 21,
+                            "staffShiftAssignment::shiftDate": "02/21/2020",
+                            "roomStaffShiftAssignment: :name": "Toddler1",
+                            "roomStaffShiftAssignment: :phoneExtension": "2416",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4617",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "02/03/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4618",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "02/04/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4619",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "02/05/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4620",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "02/06/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4621",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "02/07/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4622",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/15/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4623",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/16/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4624",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/17/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4625",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/18/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4626",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/19/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4643",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/22/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4645",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/23/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4647",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/24/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4649",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/25/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4651",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "06/26/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4705",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "07/06/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4707",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "07/07/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4709",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "07/08/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4711",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "07/09/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4713",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "07/10/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4720",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "07/20/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        },
+                        {
+                            "recordId": "4722",
+                            "staffShiftAssignment::roomID": 27,
+                            "staffShiftAssignment::shiftDate": "07/21/2020",
+                            "roomStaffShiftAssignment: :name": "Office",
+                            "roomStaffShiftAssignment: :phoneExtension": "6313",
+                            "modId": "0"
+                        }
+                    ]
+                },
+                "recordId": "5",
+                "modId": "1",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "staffShiftAssignment",
+                        "foundCount": 140,
+                        "returnedCount": 50
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "bioText": "",
+                    "indicator": "",
+                    "staffID": 868,
+                    "staff::staffNameFirstMiddleLast": "GabriellaFoster",
+                    "staffNameFirstMiddleLast": "",
+                    "staffBioContainer: :photoBase64": "",
+                    "staffContainer: :photoBase64": "",
+                    "jobTitle: :jobTitle":"Janitor - Band 3"
+                },
+                "portalData": {
+                    "staffShiftAssignment": []
+                },
+                "recordId": "9",
+                "modId": "13",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "staffShiftAssignment",
+                        "foundCount": 0,
+                        "returnedCount": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "messages": [
+        {
+            "code": "0",
+            "message": "OK"
+        }
+    ]
+}

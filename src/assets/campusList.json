@@ -1,0 +1,627 @@
+[{
+    "response": {
+        "data": [
+            {
+                "fieldData": {
+                    "address": "5510 Mavis Road\rMississauga, ON, L5V2X5\r289-444-5055\r",
+                    "campusEmail": "heartland@lullaboo.ca",
+                    "campusID": 5,
+                    "campusInventoryID": "611A5E99-8924-4580-AB17-872828C6A25C",
+                    "staffPortalAPIURL": "",
+                    "name": "Heartland",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "1",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Chelsea Rogers",
+                            "campusInventoryPersonnel::email": "chelsea.rogers@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "3"
+                        }
+                    ]
+                },
+                "recordId": "1",
+                "modId": "41",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "180 Elgin Mills Road West, Richmond Hill, ON, L4C 4M2\r905-884-1501\r",
+                    "campusEmail": "directors@lullaboo.ca",
+                    "campusID": 6,
+                    "campusInventoryID": "FBED7559-7B3B-4495-9040-12B103E09F18",
+                    "staffPortalAPIURL": "",
+                    "name": "Head Office",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "2",
+                            "campusInventoryPersonnel::identifier": "District Manager",
+                            "campusInventoryPersonnel::name": "",
+                            "campusInventoryPersonnel::email": "irini@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        }
+                    ]
+                },
+                "recordId": "2",
+                "modId": "43",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "8015 Financial Drive, Brampton L6Y-6A1\r289-410-0111",
+                    "campusEmail": "churchill@lullaboo.ca",
+                    "campusID": 16,
+                    "campusInventoryID": "43D0360E-6FBE-4CC0-8DF4-61A6B2D8C2BB",
+                    "staffPortalAPIURL": "",
+                    "name": "Churchill",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "3",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Taran Kaur",
+                            "campusInventoryPersonnel::email": "taran.kaur@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "3"
+                        }
+                    ]
+                },
+                "recordId": "3",
+                "modId": "35",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "1410 Major Mackenzie , Vaughan , L6A 4H6\r905-585-9509",
+                    "campusEmail": "maple@lullaboo.ca",
+                    "campusID": 1,
+                    "campusInventoryID": "95EC676A-CB68-41CE-9405-E54A32871283",
+                    "staffPortalAPIURL": "",
+                    "name": "Maple",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "4",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Alyssa Filippelli",
+                            "campusInventoryPersonnel::email": "alyssa.filippelli@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        }
+                    ]
+                },
+                "recordId": "4",
+                "modId": "37",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "180 Elgin Mills Road West, Richmond Hill, ON, L4C 4M2\r905-884-1501",
+                    "campusEmail": "elginmills@lullaboo.ca",
+                    "campusID": 3,
+                    "campusInventoryID": "5A8EC1F3-F6E8-43CB-9384-9A72D4E05DFA",
+                    "staffPortalAPIURL": "",
+                    "name": "Elgin",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "5",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Vanessa Li",
+                            "campusInventoryPersonnel::email": "vanessa.li@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "4"
+                        }
+                    ]
+                },
+                "recordId": "5",
+                "modId": "42",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "1450 Queen Street West, Brampton,ON, L6X 0B2\r289-298-5370",
+                    "campusEmail": "brampton@lullaboo.ca",
+                    "campusID": 4,
+                    "campusInventoryID": "4EF14BD3-3A9D-4251-9F6D-7E7B54B8475F",
+                    "staffPortalAPIURL": "",
+                    "name": "Queen",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "6",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Mikayla Day",
+                            "campusInventoryPersonnel::email": "mikayla.day@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "3"
+                        },
+                        {
+                            "recordId": "14",
+                            "campusInventoryPersonnel::identifier": "District Manager",
+                            "campusInventoryPersonnel::name": "Feri Jeldi",
+                            "campusInventoryPersonnel::email": "feri.jeldi@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "3"
+                        }
+                    ]
+                },
+                "recordId": "6",
+                "modId": "38",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 2,
+                        "returnedCount": 2
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "5329 Ninthline, Mississauga, ON, L5X 5M5\r905-363-7162",
+                    "campusEmail": "mississaugawest@lullaboo.ca",
+                    "campusID": 2,
+                    "campusInventoryID": "75A11ADA-5C31-4EA2-A2D2-30FFEF74240B",
+                    "staffPortalAPIURL": "",
+                    "name": "Mississauga",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "7",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Hanan Attia",
+                            "campusInventoryPersonnel::email": "hanan.attia@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        }
+                    ]
+                },
+                "recordId": "7",
+                "modId": "33",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "2316 Queen Street St.East , Toronto , M4E 1G8\r416-849-2977",
+                    "campusEmail": "beaches@lullaboo.ca",
+                    "campusID": 7,
+                    "campusInventoryID": "5DE6A543-973D-4C80-A779-3EB5FB480B50",
+                    "staffPortalAPIURL": "",
+                    "name": "Beaches",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "8",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Nermeen Yousef",
+                            "campusInventoryPersonnel::email": "nermeen.yousef@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        }
+                    ]
+                },
+                "recordId": "8",
+                "modId": "36",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "180 Elgin Mills Road West, Richmond Hill, ON, L4C 4M2\r905-884-1501",
+                    "campusEmail": "directors@lullaboo.ca",
+                    "campusID": 20,
+                    "campusInventoryID": "311C4CF8-F91E-41A2-B66D-9304BE9FE683",
+                    "staffPortalAPIURL": "",
+                    "name": "Personnel",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": []
+                },
+                "recordId": "9",
+                "modId": "35",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 0,
+                        "returnedCount": 0
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "90 Pinebush Rd, Cambridge , N1R 8J8\r226-318-0896",
+                    "campusEmail": "cambridge@lullaboo.ca",
+                    "campusID": 8,
+                    "campusInventoryID": "B26DD63F-BD73-406B-8617-A9C8F926C3AD",
+                    "staffPortalAPIURL": "",
+                    "name": "Cambridge",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "9",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Andrea Condron",
+                            "campusInventoryPersonnel::email": "andrea.condron@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "3"
+                        }
+                    ]
+                },
+                "recordId": "26",
+                "modId": "33",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "508 Holland Street, Bradford , On , L3Z 0A2\r519-758-6313",
+                    "campusEmail": "bradford@lullaboo.ca",
+                    "campusID": 9,
+                    "campusInventoryID": "9B22504C-E52A-4CB7-82B7-D26993BC1DF5",
+                    "staffPortalAPIURL": "",
+                    "name": "Bradford",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "10",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Alyssa DeMasi",
+                            "campusInventoryPersonnel::email": "alyssa.demasi@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        }
+                    ]
+                },
+                "recordId": "51",
+                "modId": "35",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 1,
+                        "returnedCount": 1
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "508 Holland Street, Bradford , On , L3Z 0A2\r519-758-6313",
+                    "campusEmail": "lullaboo.elgin@gmail.com",
+                    "campusID": 30,
+                    "campusInventoryID": "8C2B8F86-785F-4647-B408-B797180FC13A",
+                    "staffPortalAPIURL": "https://test.lullaboo.com/fmi/data/v1/databases/iCareStaffPortalAccess/",
+                    "name": "Steel",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "11",
+                            "campusInventoryPersonnel::identifier": "District Manager",
+                            "campusInventoryPersonnel::name": "Feri Jeldi",
+                            "campusInventoryPersonnel::email": "lullaboo.elgin@gmail.com",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        },
+                        {
+                            "recordId": "17",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Neha_Test",
+                            "campusInventoryPersonnel::email": "neha@gmail.com",
+                            "campusInventoryPersonnel::workPhone": "987654321",
+                            "modId": "1"
+                        }
+                    ]
+                },
+                "recordId": "52",
+                "modId": "47",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 2,
+                        "returnedCount": 2
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "860 College St., Toronto, ON M6H 1A2",
+                    "campusEmail": "college@lullaboo.ca",
+                    "campusID": 10,
+                    "campusInventoryID": "6BF615D1-ADF1-404B-A755-2F43B5E36639",
+                    "staffPortalAPIURL": "",
+                    "name": "College",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "12",
+                            "campusInventoryPersonnel::identifier": "District Manager",
+                            "campusInventoryPersonnel::name": "Feri Jeldi",
+                            "campusInventoryPersonnel::email": "feri.jeldi@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        },
+                        {
+                            "recordId": "15",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Cecilia Marless",
+                            "campusInventoryPersonnel::email": "cecilia.marless@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        }
+                    ]
+                },
+                "recordId": "77",
+                "modId": "47",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 2,
+                        "returnedCount": 2
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "6677 Meadowvale Town Centre Cir, Mississauga, ON L5N 2R5",
+                    "campusEmail": "meadowvale@lullaboo.ca",
+                    "campusID": 11,
+                    "campusInventoryID": "A6122023-505B-48BF-BB3D-1C1204CA9BFB",
+                    "staffPortalAPIURL": "",
+                    "name": "Meadowvale",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": [
+                        {
+                            "recordId": "13",
+                            "campusInventoryPersonnel::identifier": "District Manager",
+                            "campusInventoryPersonnel::name": "Feri Jeldi",
+                            "campusInventoryPersonnel::email": "feri.jeldi@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "4"
+                        },
+                        {
+                            "recordId": "16",
+                            "campusInventoryPersonnel::identifier": "Supervisor",
+                            "campusInventoryPersonnel::name": "Marteina Guirguis",
+                            "campusInventoryPersonnel::email": "marteina@lullaboo.ca",
+                            "campusInventoryPersonnel::workPhone": "",
+                            "modId": "2"
+                        }
+                    ]
+                },
+                "recordId": "78",
+                "modId": "31",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 2,
+                        "returnedCount": 2
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "16 First Commerce Dr., Aurora, ON L4G 0H5",
+                    "campusEmail": "aurora@lullaboo.ca",
+                    "campusID": 12,
+                    "campusInventoryID": "79290086-D0EF-4EA0-A8D2-B81C41E812AB",
+                    "staffPortalAPIURL": "",
+                    "name": "Aurora",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": []
+                },
+                "recordId": "79",
+                "modId": "37",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 0,
+                        "returnedCount": 0
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "1450 Queen Street West, Brampton,ON, L6X 0B2\r289-298-5370",
+                    "campusEmail": "wanless@lullaboo.ca",
+                    "campusID": 13,
+                    "campusInventoryID": "8314B3FA-7393-4EFC-98C4-32A6A1E832B0",
+                    "staffPortalAPIURL": "",
+                    "name": "Wanless",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": []
+                },
+                "recordId": "80",
+                "modId": "39",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 0,
+                        "returnedCount": 0
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "11 Bedford Park Ave, Toronto, ON M5M 1H9\rDirect: (416)-544-1039",
+                    "campusEmail": "",
+                    "campusID": "",
+                    "campusInventoryID": "6016F2CA-9885-468E-80BB-30E84B5EACA0",
+                    "staffPortalAPIURL": "",
+                    "name": "Bedford",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": []
+                },
+                "recordId": "81",
+                "modId": "11",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 0,
+                        "returnedCount": 0
+                    }
+                ]
+            },
+            {
+                "fieldData": {
+                    "address": "1133 Avenue Rd, Toronto, ON M5N 2E7\rDirect: (416)874-6163",
+                    "campusEmail": "",
+                    "campusID": "",
+                    "campusInventoryID": "F593A6AE-505F-477C-AA20-9B646AF3D2BD",
+                    "staffPortalAPIURL": "",
+                    "name": "Avenue",
+                    "nonStaffCampus": "<No Access>",
+                    "teacherBioURL": "",
+                    "campusNewsletterURL": ""
+                },
+                "portalData": {
+                    "campusInventoryPersonnel": []
+                },
+                "recordId": "82",
+                "modId": "14",
+                "portalDataInfo": [
+                    {
+                        "database": "iCareData",
+                        "table": "campusInventoryPersonnel",
+                        "foundCount": 0,
+                        "returnedCount": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "messages": [
+        {
+            "code": "0",
+            "message": "OK"
+        }
+    ]
+}]

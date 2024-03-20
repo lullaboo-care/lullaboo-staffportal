@@ -1,0 +1,92 @@
+<mat-card class="signup-card">
+    <mat-card-header>
+        <mat-card-title>Sign Up</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="campusFormGroup">
+                <form [formGroup]="campusFormGroup">
+                    <ng-template matStepLabel>Select Your Campus</ng-template>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Select Campus</mat-label>
+                        <mat-select (selectionChange)="onSelectionChange($event)" formControlName="campusCtrl" required>
+                          @for (campus of campuses; track campus) {
+                            @if (campus.fieldData.staffPortalAPIURL){
+                            <mat-option [value]="campus.fieldData.campusID">{{campus.fieldData.name}}</mat-option>
+                            }
+                          }
+                        </mat-select>
+                      </mat-form-field>
+                    <div>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step [stepControl]="emailFormGroup">
+                <form [formGroup]="emailFormGroup">
+                    <ng-template matStepLabel>Email Address</ng-template>
+                    <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="youremail@domain.com" formControlName="emailCtrl" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Confirm Email</mat-label>
+                        <input matInput placeholder="youremail@domain.com" formControlName="emailConfirmCtrl" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step [stepControl]="confirmationFormGroup">
+                <form [formGroup]="confirmationFormGroup">
+                    <ng-template matStepLabel>Confirmation</ng-template>
+                    <mat-form-field>
+                        <mat-label>Confirmation Code</mat-label>
+                        <input matInput formControlName="confirmationCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step [stepControl]="credsFormGroup">
+                <form [formGroup]="credsFormGroup">
+                    <ng-template matStepLabel>Create Login</ng-template>
+                    <mat-form-field>
+                        <mat-label>Username</mat-label>
+                        <input matInput placeholder="Username" formControlName="userNameCtrl" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Confirm Username</mat-label>
+                        <input matInput placeholder="Username" formControlName="userNameConfirmCtrl" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" formControlName="passwordCtrl" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Confirm Password</mat-label>
+                        <input matInput placeholder="Password" formControlName="passwordConfirmCtrl" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Done</ng-template>
+                <p>You are now done.</p>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button (click)="stepper.reset()">Reset</button>
+                </div>
+            </mat-step>
+        </mat-stepper>
+    </mat-card-content>
+</mat-card>

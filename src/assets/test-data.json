@@ -1,0 +1,30 @@
+{
+    "response": {
+        "dataInfo": {
+            "database": "iCareStaffPortalAccess",
+            "layout": "staffBasicStaffPortal",
+            "table": "staff",
+            "totalRecordCount": 266,
+            "foundCount": 1,
+            "returnedCount": 1
+        },
+        "data": [
+            {
+                "fieldData": {
+                    "firstName": "Hongwei(Vivian)",
+                    "lastName": "Liu",
+                    "staffID": 748
+                },
+                "portalData": {},
+                "recordId": "403",
+                "modId": "532"
+            }
+        ]
+    },
+    "messages": [
+        {
+            "code": "0",
+            "message": "OK"
+        }
+    ]
+}

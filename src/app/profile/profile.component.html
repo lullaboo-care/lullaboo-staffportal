@@ -1,0 +1,42 @@
+<mat-card class="profile-header">
+    @defer{
+    <mat-card-header>
+        <mat-card-title> <h2>{{profile.firstName}} {{profile.lastName}}</h2></mat-card-title>
+        <mat-card-subtitle>{{profile['jobTitle::jobTitle']}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <!--
+        <p>Address: {{ profileData.address }}</p>
+        <p>Test Data:{{ basicData | json }}</p>
+        <p>UserID: {{ userID }}</p>
+        <p>Profile Data: {{profile | json}}</p>
+        -->
+        
+        <p>Name: {{profile.firstName}} {{profile.lastName}}</p>
+        <p>Phone: {{profile.cellPhone}}</p>
+        <p>Email: {{profile.email}}</p>
+        <!--<p>Job Title ID: {{profile.jobTitleID}}</p>-->
+        <p>Job Title: {{profile['jobTitle::jobTitle']}}</p>
+        <!--<p>Policies: {{policies | json}}</p>-->
+        
+       
+        <!--
+        @for(policy of policies; track policy){
+        <p>{{policy.fieldData.policyName}} <br> Signed Date:{{policy.fieldData.signatureDate}}</p>
+        }
+        <app-policy [policies]="profileData.policy"></app-policy>
+        -->
+        <!-- <app-file-upload (fileUploaded)="onFileUploaded($event)"></app-file-upload> -->
+    </mat-card-content>
+}
+</mat-card>
+@if(policies){
+<mat-card class="initial-policies">
+    <mat-card-header>
+        <mat-card-title><h2>Initial Policies List</h2></mat-card-title> 
+    </mat-card-header>
+    <mat-card-content>
+        <app-policy></app-policy>
+    </mat-card-content>
+</mat-card>
+}

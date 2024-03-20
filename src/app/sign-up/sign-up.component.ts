@@ -77,4 +77,8 @@ export class SignUpComponent implements OnInit{
     this.campusURL = this.selectedAPIURL[0].fieldData.staffPortalAPIURL
     this.loginService.setCampus(this.campusURL);
   }
+
+  validateEmails(){};
+  getConfirmationCode(){};
+  createAccount(){};
 }

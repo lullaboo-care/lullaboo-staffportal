@@ -39,6 +39,7 @@ export class LoginComponent implements OnInit {
   selectedAPIURL:any;
   campusURL = '';
   showPassword: boolean = false;
+  hide = true;
 
   constructor(private loginService: LoginService, private router :Router, private snackBar: MatSnackBar) { 
   }

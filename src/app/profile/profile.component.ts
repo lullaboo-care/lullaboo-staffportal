@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { LoginService } from '../i-care-service.service';
 import { PolicyComponent } from '../policy/policy.component';
 import { Router } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-profile',
@@ -38,12 +39,21 @@ export class ProfileComponent implements OnInit{
     'jobTitle::jobTitle': "Loading",
   }
 
-  constructor(private loginService: LoginService, private router: Router) { }
+  constructor(private loginService: LoginService, private router: Router, private sanitizer: DomSanitizer) { }
 
   basicData:any;
   userID:string ='';
   profile:any = this.profileLoadingData;
   policies:any;
+  imageUrl: SafeResourceUrl = "";
+
+  // Convet BaseString to a usable web image.
+  convertBase64ToImage(base64String: string) {
+    if (base64String) {
+      this.imageUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`data:image/png;base64,${base64String}`);
+    }
+    return this.imageUrl;
+  }
 
 
   ngOnInit() {
@@ -53,6 +63,7 @@ export class ProfileComponent implements OnInit{
       this.loginService.setUserID(this.userID);
       this.loginService.staffExtendedStaffPortal().subscribe(profile => {
         this.profile = profile.response.data[0].fieldData;
+        this.convertBase64ToImage(this.profile['staffBioContainer::photoBase64']);
         this.loginService.setProfile(this.profile);
       }, error =>{
         console.error(`Problem Retriving Extended Staff Information : ${error.message}`)

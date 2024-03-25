@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Policy } from '../../shared/models/policy';
 import { CommonModule } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 import { LoginService } from '../i-care-service.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-policy',
   standalone: true,
-  imports: [CommonModule, MatListModule],
+  imports: [CommonModule, MatListModule, MatButtonModule],
   templateUrl: './policy.component.html',
   styleUrl: './policy.component.css'
 })

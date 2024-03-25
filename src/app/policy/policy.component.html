@@ -1,4 +1,11 @@
 <mat-list *ngIf="policies" role="list">
-    <mat-list-item *ngFor="let policy of policies" role="listitem">{{ policy.fieldData.policyName }} <br> Signed Date:{{policy.fieldData.signatureDate}}</mat-list-item>
+    <mat-list-item *ngFor="let policy of policies" class="policy" role="listitem">
+        {{ policy.fieldData.policyName }} 
+        <br>
+        <a mat-button href="{{policy.fieldData['policyInitialPolicySignature::url']}}" target="_blank">View</a>
+        <br>
+        Signed Date:{{policy.fieldData.signatureDate}}
+
+    </mat-list-item>
 </mat-list>
 <p *ngIf="!policies">No Initial Policies to load!</p>

@@ -19,3 +19,22 @@
     button[mat-raised-button] {
     align-self: flex-end;
 }
+
+.event-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2em;
+    /*padding-top: 1em;*/
+    padding-bottom: 1em;
+}
+.event-card:last-child {
+    margin-bottom: 2em;
+}
+.event-header{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.event-name{
+    font-weight: bold;
+}

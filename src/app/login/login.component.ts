@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
   testJSON: string = '';
   sessiionEnded: string = '';
   campuses :any =[];
+  events :any =[];
   selectedCampus = '';
   selectedAPIURL:any;
   campusURL = '';
@@ -50,13 +51,24 @@ export class LoginComponent implements OnInit {
     let tokenz = ''
     this.loginService.getStaffToken().subscribe(data=>{
       tokenz = data.response.token;
-      this.loginService.getCampuses(tokenz).subscribe(data=>{
+      this.loginService.getCampuses(tokenz).subscribe(
+        data=>{
         this.campuses = data.response.data;
         this.selectedAPIURL = data.response.data;
-        this.loginService.endSession(tokenz);
       }, error =>{
         console.error(`Problem Retriving Campus List: ${error.message}`)
-      });
+      }
+      );
+      this.loginService.calendarEventStaffPortal(tokenz).subscribe(
+        data=>{
+          this.events = data.response.data;
+          this.loginService.setEvents(this.events);
+        }, error => {
+          console.error(`Problem Retreving Latest Events: ${error.message}`)
+        }
+      );
+      // Close the Session
+      this.loginService.endSession(tokenz);
     }, error =>{
       console.error(`Problem Retriving Staff Token: ${error.message}`)
     });

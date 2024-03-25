@@ -23,6 +23,7 @@ export class LoginService {
   private policies = new BehaviorSubject<any>(null);
   private newHireUser = new BehaviorSubject<any>(null);
   private userEmail = new BehaviorSubject<any>(null);
+  private events = new BehaviorSubject<any>(null);
   user$ = this.user.asObservable();
   userToken$ = this.userToken.asObservable();
   userBearer$ = this.userBearer.asObservable();
@@ -32,6 +33,7 @@ export class LoginService {
   policies$ = this.policies.asObservable();
   newHireUser$ = this.newHireUser.asObservable();
   userEmail$ = this.userEmail.asObservable();
+  events$ = this.events.asObservable();
 
 /*
 Set Observable Data
@@ -55,15 +57,17 @@ Set Observable Data
     this.profile.next(data);
   }
   setPolicies(data:any){
-    this.policies.next(data)
+    this.policies.next(data);
   }
   setNewHireUser(data:any){
-    this.newHireUser.next(data)
+    this.newHireUser.next(data);
   }
   setUserEmails(data:any){
-    this.userEmail.next(data)
+    this.userEmail.next(data);
   }
-  
+  setEvents(data:any){
+    this.events.next(data);
+  }
   //Update User / Profile Information
   //TODO: Emit and Listen may not be needed remove these functions if not needed
   emit(eventName:string, payload: any){
@@ -142,7 +146,29 @@ Set Observable Data
   }
 
   //Fetching calendar event data, along with the days on which the event runs and the rooms for which it applies
-  calendarEventStaffPortal(){};
+  calendarEventStaffPortal(token:string){
+    //const startDate:Date = new Date();
+    const startDate:Date = new Date('1/1/2022');
+    let endDate:Date = new Date(startDate);
+    endDate.setFullYear(endDate.getFullYear() + 1);
+
+    const header = new HttpHeaders({
+      Authorization:`Bearer ${token}`
+    },);
+    header.set('Content-Type','application/json');
+    const options = { headers:header };
+    const dataQuery = {
+      query:[
+        {
+        startDate:`> ${startDate.toLocaleDateString()}`,
+        endDate:`< ${endDate.toLocaleDateString()}`
+        }
+      ]
+    };
+    const events = this.http.post<any>('https://test.lullaboo.com/fmi/data/v1/databases/iCareStaffPortalAccess/layouts/calendarEventStaffPortal/_find',dataQuery,options);
+    return events;
+  };
+
 
   // Fetching photographs associated with the monthly reports of various highlighted staff positions (e.g., district manager, supervisor, etc.)
   calendarMonthCalendarHighlightPositionContainerStaffPortal(){};

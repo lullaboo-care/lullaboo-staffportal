@@ -7,12 +7,12 @@
                 Initial Policies
             </mat-panel-title>
             <mat-panel-description>
-                New Hire Policies
+                New Hire Policies ({{completedPolicies}}/{{policyCount}})
             </mat-panel-description>
         </mat-expansion-panel-header>
         <mat-accordion>
             @for(policy of policies; track policy){
-                <mat-expansion-panel>
+                <mat-expansion-panel [ngClass]="getStatusClass(policy.fieldData.signatureDate)">
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             <div class="flex-container">
@@ -46,12 +46,12 @@
                     Policies
                 </mat-panel-title>
                 <mat-panel-description>
-                    Annual Policies
+                    Annual Policies({{completedAddtionalPolicies}}/{{addtionalPoliciesCount}})
                 </mat-panel-description>
             </mat-expansion-panel-header>
             <mat-accordion>
                 @for(policy of addtionalPolicies; track policy){
-                    <mat-expansion-panel>
+                    <mat-expansion-panel [ngClass]="getStatusClass(policy.fieldData.signatureDate)">
                         <mat-expansion-panel-header>
                             <mat-panel-title>
                                 <div class="flex-container">

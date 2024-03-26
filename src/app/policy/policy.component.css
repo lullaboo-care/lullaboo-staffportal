@@ -29,6 +29,14 @@
     font-weight: bold;
 }
 
+.completed{
+    background-color: #cffad4;
+}
+.incomplete{
+    background-color: #f7dcdd
+    
+}
+
 mat-expansion-panel-header{
     padding-top: 1em;
     padding-bottom: 1em;

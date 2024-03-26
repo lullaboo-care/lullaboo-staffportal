@@ -18,16 +18,51 @@ import { Router } from '@angular/router';
 export class PolicyComponent implements OnInit{
   policies:any;
   addtionalPolicies:any;
+
+  // Count Policies 
+  policyCount:number = 0;
+  completedPolicies:number = 0;
+  // Count Addtional Policies
+  addtionalPoliciesCount:number = 0;
+  completedAddtionalPolicies:number = 0;
+
   constructor(private loginService: LoginService, private router: Router) { }
+
+  completedPoliciesNumber(){
+    for(let policy of this.policies){
+      if(policy.fieldData.signatureDate){
+        this.completedPolicies++;
+      }
+    }
+  }
+  completedAddtionalPoliciesNumber(){
+    for(let policy of this.addtionalPolicies){
+      if(policy.fieldData.signatureDate){
+        this.completedAddtionalPolicies++;
+      }
+    }
+  }
+
+  getStatusClass(signed:any) {
+    if(signed){
+      return 'completed';
+    }
+    return 'incomplete';
+  }
+
   ngOnInit() {
     this.loginService.initialPolicySignatureStaffPortal().subscribe(policies=>{
-      this.policies = policies.response.data
+      this.policies = policies.response.data;
+      this.policyCount = this.policies.length;
+      this.completedPoliciesNumber();
       this.loginService.setPolicies(this.policies);
     }, error =>{
       console.error(`Problem Retriving Initial Policy Information : ${error.message}`)
     })
     this.loginService.policySignatureStaffPortal().subscribe(policies=>{
       this.addtionalPolicies = policies.response.data
+      this.addtionalPoliciesCount = this.addtionalPolicies.length;
+      this.completedAddtionalPoliciesNumber();
       this.loginService.setAdditionalPolicies(this.addtionalPolicies);
     }, error =>{
       console.error(`Problem Retriving Addtional Policy Information : ${error.message}`)

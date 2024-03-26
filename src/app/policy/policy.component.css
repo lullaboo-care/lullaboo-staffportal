@@ -1,4 +1,36 @@
+.policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction:column;
+}
+
+.placeholder-text{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
 .policy{
     padding-top: 3em;
     padding-bottom: 3em;
 }
+
+.expansion-header{
+    justify-content: space-between;
+}
+
+.policy-name{
+    font-weight: bold;
+}
+
+mat-expansion-panel-header{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+

@@ -24,6 +24,7 @@ export class LoginService {
   private newHireUser = new BehaviorSubject<any>(null);
   private userEmail = new BehaviorSubject<any>(null);
   private events = new BehaviorSubject<any>(null);
+  private additionalPolicies = new BehaviorSubject<any>(null);
   user$ = this.user.asObservable();
   userToken$ = this.userToken.asObservable();
   userBearer$ = this.userBearer.asObservable();
@@ -34,6 +35,7 @@ export class LoginService {
   newHireUser$ = this.newHireUser.asObservable();
   userEmail$ = this.userEmail.asObservable();
   events$ = this.events.asObservable();
+  additionalPolicies$ = this.additionalPolicies.asObservable();
 
 /*
 Set Observable Data
@@ -59,6 +61,9 @@ Set Observable Data
   setPolicies(data:any){
     this.policies.next(data);
   }
+  setAdditionalPolicies(data:any){
+    this.additionalPolicies.next(data);
+  }
   setNewHireUser(data:any){
     this.newHireUser.next(data);
   }
@@ -68,6 +73,7 @@ Set Observable Data
   setEvents(data:any){
     this.events.next(data);
   }
+
   //Update User / Profile Information
   //TODO: Emit and Listen may not be needed remove these functions if not needed
   emit(eventName:string, payload: any){
@@ -223,6 +229,8 @@ Set Observable Data
     const options = { headers };
     return this.http.post<any>(`${api}layouts/staffExtendedStaffPortal/_find`,dataQuery, options);
   }
+
+  // Get Initial Policies signed or unsinged by current staff
   initialPolicySignatureStaffPortal():Observable<any>{
     let bToken:any = this.userBearer$;
     let token = bToken.source._value;
@@ -241,6 +249,27 @@ Set Observable Data
     headers.set('Content-Type','application/json');
     const options = { headers };
     return this.http.post<any>(`${api}layouts/initialPolicySignatureStaffPortal/_find`,dataQuery, options);
+  }
+
+  // Get annual policies that need to be signed
+  policySignatureStaffPortal():Observable<any>{
+    let bToken:any = this.userBearer$;
+    let token = bToken.source._value;
+    let campusAPI:any = this.campusAPI$;
+    let api = campusAPI.source._value;
+    let userAccountID:any = this.userID$;
+    let userID = userAccountID.source._value;
+    const headers = new HttpHeaders({
+      Authorization:`Bearer ${token}`
+    },);
+    const dataQuery = {
+      query:[
+        {staffID:`=${userID}`},
+      ]
+    };
+    headers.set('Content-Type','application/json');
+    const options = { headers };
+    return this.http.post<any>(`${api}layouts/policySignatureStaffPortal/_find`,dataQuery, options);
   }
 
   /*

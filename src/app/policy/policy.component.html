@@ -1,11 +1,78 @@
-<mat-list *ngIf="policies" role="list">
-    <mat-list-item *ngFor="let policy of policies" class="policy" role="listitem">
-        {{ policy.fieldData.policyName }} 
-        <br>
-        <a mat-button href="{{policy.fieldData['policyInitialPolicySignature::url']}}" target="_blank">View</a>
-        <br>
-        Signed Date:{{policy.fieldData.signatureDate}}
-
-    </mat-list-item>
-</mat-list>
-<p *ngIf="!policies">No Initial Policies to load!</p>
+@if(policies){
+<div class="policy-container">
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Initial Policies
+            </mat-panel-title>
+            <mat-panel-description>
+                New Hire Policies
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-accordion>
+            @for(policy of policies; track policy){
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="flex-container">
+                            <div class="policy-name">{{ policy.fieldData.policyName }}</div>
+                            @if(policy.fieldData.signatureDate){
+                                <div> Signed:{{policy.fieldData.signatureDate}}</div>
+                            }
+                            </div>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="flex-container">
+                    <a mat-button href="{{policy.fieldData['policyInitialPolicySignature::url']}}" target="_blank">View Policy</a>
+                    <p class="placeholder-text">Signiture Input Needs To Go Here</p>
+                    </div>
+                </mat-expansion-panel>
+            }
+        </mat-accordion>
+    </mat-expansion-panel>
+</mat-accordion>
+</div>
+}
+@else {
+    <p>No Initial Policies to load!</p>
+    }
+@if(addtionalPolicies){
+    <div class="policy-container">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Policies
+                </mat-panel-title>
+                <mat-panel-description>
+                    Annual Policies
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-accordion>
+                @for(policy of addtionalPolicies; track policy){
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="flex-container">
+                                <div class="policy-name">{{ policy.fieldData.policyName }}</div>
+                                @if(policy.fieldData.signatureDate){
+                                    <div> Signed:{{policy.fieldData.signatureDate}}</div>
+                                }
+                                </div>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="flex-container">
+                        <a mat-button href="{{policy.fieldData['policyInitialPolicySignature::url']}}" target="_blank">View Policy</a>
+                        <p class="placeholder-text">Signiture Input Needs To Go Here</p>
+                        </div>
+                    </mat-expansion-panel>
+                }
+            </mat-accordion>
+        </mat-expansion-panel>
+    </mat-accordion>
+    </div>
+    }
+@else {
+    <p>No Policies to load!</p>
+    }

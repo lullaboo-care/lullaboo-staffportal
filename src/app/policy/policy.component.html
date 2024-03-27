@@ -58,19 +58,19 @@
             </mat-expansion-panel-header>
             <mat-accordion>
                 @for(policy of addtionalPolicies; track policy){
-                    <mat-expansion-panel [ngClass]="getStatusClass(policy.fieldData.signatureDate)">
+                    <mat-expansion-panel [ngClass]="getStatusClass(policy.fieldData.datePolicySignature)">
                         <mat-expansion-panel-header>
                             <mat-panel-title>
                                 <div class="flex-container">
-                                <div class="policy-name">{{ policy.fieldData.policyName }}</div>
-                                @if(policy.fieldData.signatureDate){
-                                    <div> Signed:{{policy.fieldData.signatureDate}}</div>
+                                <div class="policy-name">{{ policy.fieldData.year }} - {{ policy.fieldData.policyName }}</div>
+                                @if(policy.fieldData.datePolicySignature){
+                                    <div> Signed:{{policy.fieldData.datePolicySignature}}</div>
                                 }
                                 </div>
                             </mat-panel-title>
                         </mat-expansion-panel-header>
                         <div class="flex-container">
-                        <a mat-button href="{{policy.fieldData['policyInitialPolicySignature::url']}}" target="_blank">View Policy</a>
+                        <a mat-button href="{{policy.fieldData['policyPolicySignature::url']}}" target="_blank">View Policy</a>
                         @if(policy.fieldData['policySignatureContainer::staffPolicySignatureBase64']){
                             <div class="profile-image">
                                 <img [src]="convertPolicyBase64ToImage(policy.fieldData['policySignatureContainer::staffPolicySignatureBase64'])" alt="Signiture">
@@ -88,5 +88,5 @@
     </div>
     }
 @else {
-    <p>No Policies to load!</p>
+    <p class="policy-container">No Policies to load!</p>
     }

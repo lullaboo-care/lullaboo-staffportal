@@ -29,7 +29,8 @@
       </form>
     </mat-card-content>
   </mat-card>
-  @if(events.length > 0){
+  
+  @if(events.length == 1){
     <h2 class="event-header">Upcomming Events</h2>
     @for(event of events; track events){
   <mat-card class="event-card">
@@ -37,17 +38,7 @@
       <mat-card-title><span class="event-name">{{event.fieldData.calendarEventName}}</span> - {{event.fieldData.startDate}}</mat-card-title>
     </mat-card-header>
   </mat-card>
-}
-}
-<!--
-  <p>Selected Campus: {{selectedCampus}}</p>
-  <p>API Selected: {{campusURL}}</p>
--->
+  }
 
-<!--
-  <p>API Selected: {{selectedAPIURL.fieldData.staffPortalAPIURL}}</p>
-  <p>Token: {{ token | json}}</p>
-  <p>Query JSON: {{ testJSON | json }}</p>
-  <p>Session Ended: {{sessiionEnded | json}}</p>
-  <p>Error: {{ error | json }}</p>
-  -->
+}
+

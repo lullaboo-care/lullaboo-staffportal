@@ -15,4 +15,5 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 })
 export class Navigation {
     @Input() appTitle:string = '';
+    //TODO: Replace this with an actual Nav Component with a sidebar for future menus
 }

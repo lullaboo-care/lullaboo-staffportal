@@ -29,6 +29,7 @@ export class PolicyComponent implements OnInit{
 
   constructor(private loginService: LoginService, private router: Router, private sanitizer: DomSanitizer ) { }
 
+  // Count Completed policies
   completedPoliciesNumber(){
     for(let policy of this.policies){
       if(policy.fieldData.signatureDate){
@@ -36,14 +37,16 @@ export class PolicyComponent implements OnInit{
       }
     }
   }
+  // Count Completed Annual Policies
   completedAddtionalPoliciesNumber(){
     for(let policy of this.addtionalPolicies){
-      if(policy.fieldData.signatureDate){
+      if(policy.fieldData.datePolicySignature){
         this.completedAddtionalPolicies++;
       }
     }
   }
-
+  // Convet Signiture to an Image to be viewed on app
+  // TODO: Convert touch signitures to img to view
   convertPolicyBase64ToImage(base64String: string) {
     let signiture: SafeResourceUrl = "";
     if (base64String) {
@@ -52,6 +55,7 @@ export class PolicyComponent implements OnInit{
     return signiture;
   }
 
+  // Set Status of Signiture for CSS class
   getStatusClass(signed:any) {
     if(signed){
       return 'completed';
@@ -60,6 +64,7 @@ export class PolicyComponent implements OnInit{
   }
 
   ngOnInit() {
+    // Load Polices onLoad
     this.loginService.initialPolicySignatureStaffPortal().subscribe(policies=>{
       this.policies = policies.response.data;
       this.policyCount = this.policies.length;

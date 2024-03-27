@@ -25,30 +25,10 @@
                 </div>
             }
         </div>
-        <!--
-        <p>Address: {{ profileData.address }}</p>
-        <p>Test Data:{{ basicData | json }}</p>
-        <p>UserID: {{ userID }}</p>
-        <p>Profile Data: {{profile | json}}</p>
-        -->
-        
-        
-        <!--<p>Policies: {{policies | json}}</p>-->
-        
-       
-        <!--
-        @for(policy of policies; track policy){
-        <p>{{policy.fieldData.policyName}} <br> Signed Date:{{policy.fieldData.signatureDate}}</p>
-        }
-        <app-policy [policies]="profileData.policy"></app-policy>
-        -->
-        <!-- <app-file-upload (fileUploaded)="onFileUploaded($event)"></app-file-upload> -->
     </mat-card-content>
 }
 </mat-card>
 @if(policies){
-    <!--<mat-card class="profile-header">-->
+    <!-- TODO: Change this to show if there are any policies new or old not just initial ones -->
     <app-policy></app-policy>
-<!--</mat-card>-->
-
 }

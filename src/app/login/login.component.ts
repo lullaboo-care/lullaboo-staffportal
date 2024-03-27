@@ -59,6 +59,7 @@ export class LoginComponent implements OnInit {
         console.error(`Problem Retriving Campus List: ${error.message}`)
       }
       );
+      // Load Upcomming Events
       this.loginService.calendarEventStaffPortal(tokenz).subscribe(
         data=>{
           this.events = data.response.data;
@@ -89,7 +90,7 @@ export class LoginComponent implements OnInit {
 
   // Function to get Bearer Token value
   submitLogin(){
-    //todo: Submitting Function to
+    //TODO: Create Session Cookie too keep user logged into app not just iCare 
     let credentials = `${this.username}:${this.password}`;
 
     this.loginService.login(credentials).subscribe(response => {

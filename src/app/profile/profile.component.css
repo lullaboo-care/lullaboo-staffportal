@@ -9,3 +9,35 @@
     margin: 0 auto;
     margin-top: 1em;
 }
+.profile-content{
+    display: flex;
+    flex-direction:row;
+}
+.profile-information{
+justify-content: left;
+padding-top: 1em;
+padding-right: 1em;
+}
+.profile-image{
+    justify-content: center;
+    padding-top: 1em;
+    max-width: 300px;
+}
+
+.profile-image{
+    justify-content: center;
+    padding-top: 1em;
+    max-width: 300px;
+    img{
+        max-width: 200px;
+    }
+}
+.label{
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .profile-content{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+  }

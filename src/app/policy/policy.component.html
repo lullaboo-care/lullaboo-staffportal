@@ -25,7 +25,14 @@
                     </mat-expansion-panel-header>
                     <div class="flex-container">
                     <a mat-button href="{{policy.fieldData['policyInitialPolicySignature::url']}}" target="_blank">View Policy</a>
-                    <p class="placeholder-text">Signiture Input Needs To Go Here</p>
+                    @if(policy.fieldData['policySignatureContainer::staffPolicySignatureBase64']){
+                        <div class="profile-image">
+                            <img [src]="convertPolicyBase64ToImage(policy.fieldData['policySignatureContainer::staffPolicySignatureBase64'])" alt="Signiture">
+                        </div>
+                    }
+                    @else {
+                        <p class="placeholder-text">Signiture Input Needs To Go Here</p>
+                    }
                     </div>
                 </mat-expansion-panel>
             }
@@ -64,7 +71,14 @@
                         </mat-expansion-panel-header>
                         <div class="flex-container">
                         <a mat-button href="{{policy.fieldData['policyInitialPolicySignature::url']}}" target="_blank">View Policy</a>
-                        <p class="placeholder-text">Signiture Input Needs To Go Here</p>
+                        @if(policy.fieldData['policySignatureContainer::staffPolicySignatureBase64']){
+                            <div class="profile-image">
+                                <img [src]="convertPolicyBase64ToImage(policy.fieldData['policySignatureContainer::staffPolicySignatureBase64'])" alt="Signiture">
+                            </div>
+                        }
+                        @else {
+                            <p class="placeholder-text">Signiture Input Needs To Go Here</p>
+                        }
                         </div>
                     </mat-expansion-panel>
                 }

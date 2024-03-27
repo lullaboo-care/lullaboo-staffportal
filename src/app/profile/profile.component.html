@@ -5,6 +5,26 @@
         <mat-card-subtitle>{{profile['jobTitle::jobTitle']}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
+        <div class="profile-content">
+            <div class="profile-information">
+                <p><span class="label">Name:</span> {{profile.firstName}} {{profile.lastName}}</p>
+                <p><span class="label">Phone:</span> {{profile.cellPhone}}</p>
+                <p><span class="label">Email:</span> {{profile.email}}</p>
+                <p><span class="label">Address:</span>
+                    <br>{{profile.address}}
+                    <br>{{profile.city}}, {{profile.province}}
+                    <br>{{profile.zipCode}}
+                    <br>
+                </p>
+                <p><span class="label">Emergency Contact:</span> {{profile.emergencyContactName}}</p>
+                <p><span class="label">Emergency Contact Number:</span> {{profile.emergencyContactNumber}}</p>
+            </div>
+            @if(imageUrl != ""){
+                <div class="profile-image">
+                    <img [src]="imageUrl" alt="Staff Image">
+                </div>
+            }
+        </div>
         <!--
         <p>Address: {{ profileData.address }}</p>
         <p>Test Data:{{ basicData | json }}</p>
@@ -12,14 +32,7 @@
         <p>Profile Data: {{profile | json}}</p>
         -->
         
-        <p>Name: {{profile.firstName}} {{profile.lastName}}</p>
-        <p>Phone: {{profile.cellPhone}}</p>
-        <p>Email: {{profile.email}}</p>
-        <p>Job Title: {{profile['jobTitle::jobTitle']}}</p>
-        <p>Staff Photo: {{profile['staffBioContainer::photoBase64']}}</p>
-        @if(imageUrl != ""){
-            <img [src]="imageUrl" alt="Staff Image">
-        }
+        
         <!--<p>Policies: {{policies | json}}</p>-->
         
        

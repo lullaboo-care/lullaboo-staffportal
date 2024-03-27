@@ -54,8 +54,7 @@ export class ProfileComponent implements OnInit{
     }
     return this.imageUrl;
   }
-
-
+  
   ngOnInit() {
     this.loginService.staffPortalUserAccountStaffPortal().subscribe(data =>{
       this.basicData = data;
@@ -63,7 +62,7 @@ export class ProfileComponent implements OnInit{
       this.loginService.setUserID(this.userID);
       this.loginService.staffExtendedStaffPortal().subscribe(profile => {
         this.profile = profile.response.data[0].fieldData;
-        this.convertBase64ToImage(this.profile['staffBioContainer::photoBase64']);
+        this.convertBase64ToImage(this.profile['staffContainer::photoBase64']);
         this.loginService.setProfile(this.profile);
       }, error =>{
         console.error(`Problem Retriving Extended Staff Information : ${error.message}`)

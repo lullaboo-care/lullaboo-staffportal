@@ -7,6 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LoginService } from '../i-care-service.service';
 import { Router } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-policy',
@@ -26,7 +27,7 @@ export class PolicyComponent implements OnInit{
   addtionalPoliciesCount:number = 0;
   completedAddtionalPolicies:number = 0;
 
-  constructor(private loginService: LoginService, private router: Router) { }
+  constructor(private loginService: LoginService, private router: Router, private sanitizer: DomSanitizer ) { }
 
   completedPoliciesNumber(){
     for(let policy of this.policies){
@@ -41,6 +42,14 @@ export class PolicyComponent implements OnInit{
         this.completedAddtionalPolicies++;
       }
     }
+  }
+
+  convertPolicyBase64ToImage(base64String: string) {
+    let signiture: SafeResourceUrl = "";
+    if (base64String) {
+      signiture = this.sanitizer.bypassSecurityTrustResourceUrl(`data:image/png;base64,${base64String}`);
+    }
+    return signiture;
   }
 
   getStatusClass(signed:any) {
